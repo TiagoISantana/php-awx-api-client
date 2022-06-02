@@ -12,17 +12,19 @@ class AWXConnector
 
     /**
      * @var string
-     * Token generate on AWX
-     * http://sts306wk12:9292/#/users/82/tokens?user_search=page_size:20;order_by:username&token_search=page_size:10;order_by:application__name
+     * Barer token generate on AWX
      */
     protected string $_oauth2_token = '';
 
     /**
-     * Using sts306 proxy on dev environment or Azure
+     * Ansible base URI including api version/
      * @var string
      */
     protected string $_ansible_base_uri = '';
 
+    /**
+     * @var
+     */
     public $_stdout;
 
     /**
